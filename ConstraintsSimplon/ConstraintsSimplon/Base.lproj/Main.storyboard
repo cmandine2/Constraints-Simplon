@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConstraintsSimplon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXX-yW-BuN">
+                                <rect key="frame" x="0.0" y="335" width="430" height="262"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ce luminaire est tout simplement parfait pour sublimer votre table a manger ou un salon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDr-sA-Mgz">
+                                        <rect key="frame" x="8" y="213.33333333333337" width="414" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-hP-3RQ">
+                                        <rect key="frame" x="362" y="101" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="QN9-FQ-bzK"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="VTT-r3-mjC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="arrowshape.forward.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapToNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pd1-dE-KMO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-tc-6hh">
+                                        <rect key="frame" x="8" y="101" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DKu-Ox-Dok"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="iC4-Vl-Dwe"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="arrowshape.left.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapToPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ori-yy-6hQ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luminaire" translatesAutoresizingMaskIntoConstraints="NO" id="fsY-r6-Qtw">
+                                        <rect key="frame" x="76" y="8" width="278" height="197.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fsY-r6-Qtw" secondAttribute="height" multiplier="241:171" priority="999" id="w7r-xg-jZs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aHd-tc-6hh" firstAttribute="centerY" secondItem="lXX-yW-BuN" secondAttribute="centerY" id="BpK-kH-SLd"/>
+                                    <constraint firstItem="aHd-tc-6hh" firstAttribute="leading" secondItem="lXX-yW-BuN" secondAttribute="leading" constant="8" id="Htn-c6-hna"/>
+                                    <constraint firstAttribute="trailing" secondItem="VDr-sA-Mgz" secondAttribute="trailing" constant="8" id="PBp-1o-s9I"/>
+                                    <constraint firstItem="VDr-sA-Mgz" firstAttribute="top" secondItem="fsY-r6-Qtw" secondAttribute="bottom" constant="8" symbolic="YES" id="Vad-LI-CEK"/>
+                                    <constraint firstItem="fsY-r6-Qtw" firstAttribute="leading" secondItem="aHd-tc-6hh" secondAttribute="trailing" constant="8" id="ZYy-Fv-8Ub"/>
+                                    <constraint firstItem="mB8-hP-3RQ" firstAttribute="leading" secondItem="fsY-r6-Qtw" secondAttribute="trailing" constant="8" symbolic="YES" id="dEm-2V-Ep3"/>
+                                    <constraint firstAttribute="bottom" secondItem="VDr-sA-Mgz" secondAttribute="bottom" constant="8" id="ezx-KT-nLX"/>
+                                    <constraint firstItem="VDr-sA-Mgz" firstAttribute="leading" secondItem="lXX-yW-BuN" secondAttribute="leading" constant="8" id="rcU-Bh-uJl"/>
+                                    <constraint firstAttribute="trailing" secondItem="mB8-hP-3RQ" secondAttribute="trailing" constant="8" id="xBD-qL-TmH"/>
+                                    <constraint firstItem="fsY-r6-Qtw" firstAttribute="top" secondItem="lXX-yW-BuN" secondAttribute="top" constant="8" id="xUj-2m-Kw8"/>
+                                    <constraint firstItem="mB8-hP-3RQ" firstAttribute="centerY" secondItem="lXX-yW-BuN" secondAttribute="centerY" id="ykz-HF-g1e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lXX-yW-BuN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PgS-DC-2KA"/>
+                            <constraint firstItem="lXX-yW-BuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YJV-0t-ZOr"/>
+                            <constraint firstItem="lXX-yW-BuN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zve-Bh-mUD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="VDr-sA-Mgz" id="sNr-hw-H5p"/>
+                        <outlet property="imageView" destination="fsY-r6-Qtw" id="jUQ-hR-glW"/>
+                        <outlet property="leftButton" destination="aHd-tc-6hh" id="JmR-Y1-luZ"/>
+                        <outlet property="rightButton" destination="mB8-hP-3RQ" id="yDC-9H-vPX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.297709923664122" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.left.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="luminaire" width="3732" height="5598"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
